@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FlightPool</title>
+	<link rel="stylesheet" type="text/css" href="../CSS/style.css">
+	<link rel="stylesheet" type="text/css" href="../bxslider/dist/jquery.bxslider.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="../bxslider/dist/jquery.bxslider.min.js"></script>
+</head>
+<body>
+	<header>
+		<div id="bm">
+			<div class="navigation"><a href="index.html"><p class="navigation1"><img src="../media/logo.png" class="logo" ></p></a></div>
+			<div class="navigation"><a href="#2"><p class="navigation1">Акции и скидки</p></a></div>
+			<div class="navigation"><a href="#1"><p class="navigation1">Поиск</p></a></div>
+			<div class="navigation"><a href="login.html"><p class="navigation1">Личный кабинет</p></a></div>
+		</div>
+	</header>
+	<div class="slider">
+		<ul class="bxslider">
+			<li><img src="../media/images/экипаж1.png"></li>
+			<li><img src="../media/images/места.png"></li>
+			<li><img src="../media/images/самолёт.png"></li>
+			<li><img src="../media/images/slider4.jpg"></li>
+			<li><img src="../media/images/парк самолётов.png"></li>
+		</ul>
+	</div>
+	<script>
+		jQuery(document).ready(function(){
+			jQuery('.bxslider').bxSlider({
+				autoStart: true,
+				auto: true,
+				pause: 4000,
+				autoDirection: 'next',
+				autoHover: true
+			});
+		});
+	</script>
+	<h1 class="search-h1">Основные принципы накопления бронирований</h1>
+	<div class="principles">
+		1.	Выбрать удобную дату перелета.
+		<br>
+		2.	Накопить больше 50% бронирований на рейс.
+		<br>
+		3.	Получить снижение стоимости.
+	</div>
+	<h1 class="search-h1">Начать путешествие</h1>
+	<form id = "1" class="search" action="search.html">
+		<div class="search-text">Заполните поля для поиска подходящего рейса</div>
+		<div class="eyeliner">Откуда:
+			<select class="test-0-fd" required="required">
+				<option></option>
+				<option>Москва</option>
+				<option>Санкт-Петербург</option>
+				<option>Екатеринбург</option>
+				<option>Севастополь</option>
+			</select>
+		</div>
+		<br>
+		<div class="eyeliner">Куда:
+			<select class="test-0-fa" required="required">
+				<option></option>
+				<option>Рязань</option>
+				<option>Краснодар</option>
+				<option>Сочи</option>
+				<option>Самара</option>
+			</select>
+		</div>
+		<br>
+		<div class="eyeliner">Туда:
+			<input class="test-0-fdt-" type="date" required="required">
+		</div>
+		<br>
+		<div class="eyeliner">Обратно:
+			<input class="test-0-fat" type="date" required="required">
+		</div>
+		<br>
+		<div class="eyeliner">Количество человек:
+			<input class="test-0-fnp" type="number" min="1" max="8" required="required">
+		</div>
+	</br>
+	<input id="poisk" class="test-0-fbs" type="submit" name="Отправить" value="Поиск рейсов" required="required"></form>
+<h1 id="2" class="search-h1">Актуальные акции</h1>
+<div class="Promo">
+	<div class="test-0-an">Летай за знаниями!</div>
+	<img src="..\media\images\promotions\promotion1.jpg" class="test-0-ai">
+	<div class="test-0-ad">Скидка 15% на билеты для студентов на международные рейсы. 
+		Дополнительные условия: предъявление студенческого билета при регистрации на рейс.
+		Срок действия: круглый год. 
+	</div>
+	<button class="test-0-abm">Открыть</button>
+</div>
+<br>
+<br>
+<div class="Promo">
+	<div class="test-0-an">Комфорт в небе</div>
+	<img src="..\media\images\promotions\promotion2.png" class="test-0-ai">
+	<div class="test-0-ad">Скидка 25% на билеты бизнес-класса на дальнемагистральные рейсы. 
+		Дополнительные условия: количество билетов по акции ограничено.
+		Срок действия: с 1 мая по 1 сентября.
+	</div>
+	<button class="test-0-abm">Открыть</button>
+</div>
+<br>
+<br>
+<div class="Promo">
+	<div class="test-0-an">Вместе веселее!</div>
+	<img src="..\media\images\promotions\promotion3.jpg" class="test-0-ai">
+	<div class="test-0-ad">Скидка 20% на билеты для семей (2 взрослых + 1 ребёнок до 12 лет) на рейсы по России.
+		Дополнительные условия: бронирование билетов на сайте не менее чем за 14 дней до вылета.
+		Срок действия: с 1 мая по 31 августа
+	</div>
+	<button class="test-0-abm">Открыть</button>
+</div>
+<br>
+<br>
+<div class="Promo">
+	<div class="test-0-an">Лёгкий багаж</div>
+	<img src="..\media\images\promotions\promotion4.jpg" class="test-0-ai">
+	<div class="test-0-ad">Бесплатный провоз одного места багажа весом до 23кг на всех рейсах.
+		Дополнительные условия: акция действует при бронировании билетов на сайте.
+		Срок действия: с 1 августа по 1 сентября.
+	</div>
+	<button class="test-0-abm">Открыть</button>
+</div>
+<h1 class="search-h1">Подписка на закрытые акции</h1>
+<form class="lockpromo">
+	<div class="search-text">Введите email для подписки на закрытые акции</div>
+	<input class="test-0-sie " type="email" placeholder="Ваш email" required="required">	
+	<br>
+	<br>
+	<a href="#Subscribe">
+		<input id="Subscribe" class="test-0-sbs" type="submit" name="Отправить" value="Подписаться" required="required">
+	</a>
+</form>
+<a href="#Subscribe"><h1 class="search-h1">Отзывы</h1></a>
+<div class="reviews">
+	<div class="left-review">
+		<div class="feedback">
+			<img src="..\media\images\otziv2.png" class="review-photo">
+			<div class="feedback-name">Эдуард Ш.</div>
+			<div class="comment">Всё отлично!!!! Чисто, удобно, комфортно, есть где отдохнуть, поесть и спать! Сотрудники профи!!!</div>
+		</div>
+		<div class="feedback">
+			<img src="..\media\images\otziv1.png" class="review-photo">
+			<div class="feedback-name">Ольга К.</div>
+			<div class="comment">Лучший авиаперевозчик на сегодняшний день! 
+			</div>
+		</div>
+		<div class="feedback">
+			<img src="..\media\images\otziv4.png" class="review-photo">
+			<div class="feedback-name">Алексей С.</div>
+			<div class="comment">Дешёвые комфортые перелёты, класс!!!</div>
+		</div>
+	</div>
+	<div class="right-review">
+		<div class="feedback">
+			<img src="..\media\images\otziv5.png" class="review-photo">
+			<div class="feedback-name">Антон К.</div>
+			<div class="comment">Огромный, чистый, просторный самолёт. Хорошая еда, напитки, подарочки детям. </div>
+		</div>
+		<div class="feedback">
+			<img src="..\media\images\otziv3.png" class="review-photo">
+			<div class="feedback-name">Алекс</div>
+			<div class="comment">Я проспал весь полёт</div>
+		</div>
+		<div class="feedback">
+			<img src="..\media\images\otziv6.png" class="review-photo">
+			<div class="feedback-name">Светлана Н.</div>
+			<div class="comment">Все на высшем уровне, вежливый персонал.</div>
+		</div>
+	</div>
+</div>
+<footer class="footer-index">
+	<div class="footer-container">
+		<div class="footer-block">
+			<a href="index.html">
+				<img src="../media/logo.png" class="footer-logo">
+			</a>
+		    <nav class="footer-nav">
+				<a href="index.html" class="footer-link">Главная</a>
+				<a href="login.html" class="footer-link">Войти</a>
+				<a href="#Subscribe" class="footer-link">Отзывы</a>
+				<a href="#" class="footer-link">Контакты</a>
+			</nav>
+			<div class="test-0-phone">
+				8 (800) 100-10-10
+
+				Балашова М.В.    
+			</div>
+		</div>
+	</div>
+</footer>
+</body>
+</html>
